@@ -3,9 +3,9 @@
     <nav>
       <ul>
         <%# !!!_hardcode %>
-        <li>2020</li>
+        <li><%= current_year %></li>
         <li>Alexander</li>
-        <li><%= link_to 'Test Guru', 'https://github.com/gitalek/test-guru' %></li>
+        <li><%= link_to 'Test Guru', github_url('gitalek', 'test-guru') %></li>
         <li>Description</li>
         <li><%= link_to 'Учебный проект в онлайн-школе Thinknetica', 'https://thinknetica.com/' %></li>
       </ul>
