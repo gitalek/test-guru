@@ -1,2 +1,19 @@
-<h1>Tests#show</h1>
-<p>Find me in app/views/tests/show.html.erb</p>
+<%# <h1>Tests#show</h1> %>
+<%# <p>Find me in app/views/tests/show.html.erb</p> %>
+
+<p>
+  <strong>Title:</strong>
+  <%= @test.title %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @test.level %>
+</p>
+
+<p>
+  <%= link_to 'Edit', edit_test_path(@test) %>
+</p>
+<p>
+  <%= link_to 'Back', tests_path %>
+</p>

@@ -6,6 +6,7 @@ class Test < ApplicationRecord
   has_many :users, through: :tests_users
   has_many :questions
 
+  # validates :title, :category, :creator, presence: true
   validates :title, presence: true
   validates :level, numericality: {
     only_integer: { greater_than_or_equal_to: 0 }
