@@ -5,10 +5,7 @@ class QuestionsController < ApplicationController
   rescue_from ActiveRecord::RecordNotFound,
               with: :rescue_with_question_not_found
 
-  def index
-    data = @test.questions.inspect
-    render plain: data
-  end
+  def index; end
 
   def show
     render json: @question

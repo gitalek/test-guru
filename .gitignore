@@ -37,4 +37,4 @@ yarn-debug.log*
 
 # custom
 .rake_tasks~
-/cli_commands.log
+/cli_commands.log*

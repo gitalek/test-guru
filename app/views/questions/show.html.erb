@@ -11,4 +11,11 @@
   <%= link_to 'Back', tests_path %>
 </p>
 
-<%= render 'shared/test_questions' %>
+<table>
+  <tr>
+    <th>Question</th>
+  </tr>
+
+  <%= render partial: 'questions/question',
+             collection: @test.questions %>
+</table>
