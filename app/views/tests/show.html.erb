@@ -7,8 +7,9 @@
 </p>
 
 <p>
-  <%= link_to 'Edit', edit_test_path(@test) %> |
-  <%= link_to 'Back', tests_path %>
+  <%= link_to 'Edit Test', edit_test_path(@test) %> |
+  <%= link_to 'Add New Question', new_test_question_path(@test) %> |
+  <%= link_to 'Back To Tests', tests_path %>
 </p>
 
 <%= render 'shared/test_questions' %>

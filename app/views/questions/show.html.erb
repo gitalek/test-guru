@@ -1,21 +1,10 @@
 <p>
-  <strong>Title:</strong>
-  <%= @test.title %>
-  <br>
-  <strong>Level:</strong>
-  <%= @test.level %>
+  <strong>Question:</strong>
+  <%= @question.body %>
 </p>
+
+<%= render 'shared/question_answers' %>
 
 <p>
-  <%= link_to 'Edit', edit_test_path(@test) %> |
-  <%= link_to 'Back', tests_path %>
+  <%= link_to 'Back to Test', test_path(@question.test_id) %>
 </p>
-
-<table>
-  <tr>
-    <th>Question</th>
-  </tr>
-
-  <%= render partial: 'questions/question',
-             collection: @test.questions %>
-</table>

@@ -13,5 +13,6 @@ class Answer < ApplicationRecord
       message = "Quesiton with id #{question_id} \
                 has already achieved maximum answers limit - #{limit}"
       errors.add(:base, message)
+    end
   end
 end
