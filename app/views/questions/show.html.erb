@@ -6,5 +6,7 @@
 <%= render 'shared/question_answers' %>
 
 <p>
+  <%= link_to 'New Answer', new_question_answer_path(@question) %>
+  <%= link_to 'Edit', edit_question_path(@question) %>
   <%= link_to 'Back to Test', test_path(@question.test_id) %>
 </p>

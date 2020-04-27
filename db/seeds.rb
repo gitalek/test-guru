@@ -32,18 +32,18 @@ tests_data = [
 ]
 tests = Test.create!(tests_data)
 
-tests_users_data = [
-  { user_id: users[0].id, test_id: tests[0].id },
-  { user_id: users[0].id, test_id: tests[2].id },
-  { user_id: users[1].id, test_id: tests[4].id },
-  { user_id: users[2].id, test_id: tests[1].id },
-  { user_id: users[3].id, test_id: tests[3].id },
-  { user_id: users[3].id, test_id: tests[0].id },
-  { user_id: users[4].id, test_id: tests[5].id },
-  { user_id: users[4].id, test_id: tests[1].id },
-  { user_id: users[4].id, test_id: tests[0].id }
-]
-TestsUser.create!(tests_users_data)
+# tests_users_data = [
+#   { user_id: users[0].id, test_id: tests[0].id },
+#   { user_id: users[0].id, test_id: tests[2].id },
+#   { user_id: users[1].id, test_id: tests[4].id },
+#   { user_id: users[2].id, test_id: tests[1].id },
+#   { user_id: users[3].id, test_id: tests[3].id },
+#   { user_id: users[3].id, test_id: tests[0].id },
+#   { user_id: users[4].id, test_id: tests[5].id },
+#   { user_id: users[4].id, test_id: tests[1].id },
+#   { user_id: users[4].id, test_id: tests[0].id }
+# ]
+# TestsUser.create!(tests_users_data)
 
 questions_data = [
   { test_id: tests[0].id, body: 'Тег, делающий текст жирным' },
