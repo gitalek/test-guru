@@ -1,2 +1,15 @@
-<h1>Tests#show</h1>
-<p>Find me in app/views/tests/show.html.erb</p>
+<p>
+  <strong>Title:</strong>
+  <%= @test.title %>
+  <br>
+  <strong>Level:</strong>
+  <%= @test.level %>
+</p>
+
+<p>
+  <%= link_to 'Edit Test', edit_test_path(@test) %> |
+  <%= link_to 'Add New Question', new_test_question_path(@test) %> |
+  <%= link_to 'Back To Tests', tests_path %>
+</p>
+
+<%= render 'shared/test_questions' %>

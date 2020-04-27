@@ -2,10 +2,11 @@ class Test < ApplicationRecord
   belongs_to :category
   belongs_to :user, foreign_key: :creator_id
 
-  has_many :tests_users
-  has_many :users, through: :tests_users
+  has_many :test_passages
+  has_many :users, through: :test_passages
   has_many :questions
 
+  # validates :title, :category, :creator, presence: true
   validates :title, presence: true
   validates :level, numericality: {
     only_integer: { greater_than_or_equal_to: 0 }

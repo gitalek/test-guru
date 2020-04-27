@@ -1,0 +1,10 @@
+<%= form_with model: [@test, @question], local: true do |form| %>
+  <p>
+    <%= form.label :body %></br>
+    <%= form.text_field :body %></br>
+    <%= hidden_field_tag(:test_id, @test.id) %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
